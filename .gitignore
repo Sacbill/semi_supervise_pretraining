@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda / env
+.env
+*.conda
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Logs & outputs
+logs/
+runs/
+output/
+results/
+
+# OS
+.DS_Store
+Thumbs.db
