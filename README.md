@@ -1,11 +1,14 @@
-Semi-Supervised and Self-Supervised Pretraining (Dogs vs. Cats)
+# Semi-Supervised and Self-Supervised Pretraining under Limited Labels
 
-This repository contains code and experiments for benchmarking self-supervised (MAE) and semi-supervised pretraining methods under limited labeled data, evaluated using a linear probe protocol on the Dogs vs. Cats image classification task.
+This repository contains code and experiments for benchmarking **self-supervised (MAE)** and **semi-supervised pretraining** methods under limited labeled data. All methods are evaluated using a **linear probe protocol** on the **Dogs vs. Cats** image classification task.
 
-Dataset
+---
 
-The dataset is the Dogs vs. Cats dataset from Kaggle, organized in a PyTorch ImageFolder format.
+## Dataset
 
+The dataset used in this project is the **Dogs vs. Cats** dataset from **Kaggle**, organized in a format compatible with PyTorch’s `ImageFolder`.
+
+```text
 datasets/
 ├── train/
 │   ├── cat/
@@ -16,17 +19,8 @@ datasets/
 └── test/
     ├── cat/
     └── dog/
-Classes: cat, dog
-
-Task: Binary image classification
-
-Image size: Resized to 256×256
-
-Labels: Inferred from folder names
-
-Splits: Train / Validation / Test
-
-Environment
-
+```
+```bash
 conda env create -f environment.yml
 conda activate introcnn
+```
